@@ -8,8 +8,8 @@ app=Flask(__name__)
 def index():
     return "this is the index page"
 
-@app.route("/tagged/<tag>")
-def tag(tag="foodporn"):
+@app.route("/tagged/")
+def tag(tag="monkeys"):
     url = "http://api.tumblr.com/v2/tagged?tag=%s&api_key=dw6tmMQNuJU1I9jM6NPCuyPMwgYWKVlJGXZpQm1fWgMjEa9zxh"
     url = url%(tag)
     request = urllib.urlopen(url)
