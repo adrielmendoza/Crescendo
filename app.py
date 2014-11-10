@@ -10,7 +10,7 @@ def index():
 
 @app.route("/tagged/<tag>")
 def tag(tag="foodporn"):
-    url = "http://api.tumblr.com/v2/tagged?tag=%s&api_key=R3IuczppduJh8tyKOeIISQnDdAR4jRl6CN5ascDxsX1kTpUBq9"
+    url = "http://api.tumblr.com/v2/tagged?tag=%s&api_key=dw6tmMQNuJU1I9jM6NPCuyPMwgYWKVlJGXZpQm1fWgMjEa9zxh"
     url = url%(tag)
     request = urllib.urlopen(url)
     s = request.read()
