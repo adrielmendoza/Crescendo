@@ -51,7 +51,7 @@ def o(tag="hello"):
     client = soundcloud.Client(client_id='5c46cd90fc27e327c5d396d4c2cd2acc')
 
     # get a tracks oembed data
-    track_url = 'http://soundcloud.com/forss/flickermood'
+    track_url = 'https://soundcloud.com/odesza/sun-models-feat-madelyn-grant'
     embed_info = client.get('/oembed', url=track_url)
     print embed_info
     # print the html for the player widget
