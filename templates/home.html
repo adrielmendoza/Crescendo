@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+Crescendo
+{% endblock title %}
+
+{% block body %}
+
+<div class="jumbotron">
+  <center>
+  <h1>Ever wanted to generate an album?</h1>
+  <p class="lead">An album literally about anything. ANYTHING. Try Crescendo out to get a sneak peek of what the album would look like.</p>
+  </center>
+</div>
+<form>
+  <div class="pull-left">
+  <input type="text" class="form-control" name="query" placeholder="An album about...">
+  <input type="text" class="form-control" name="name" placeholder="Your Name"><br>
+  <input type="submit" class="btn btn-sm btn-success pull-right" name="start" value="Let's do this!">
+</div>
+</form>
+
+{% endblock body %}
