@@ -2,10 +2,18 @@
 <head>
 	<script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
 </head>
+
 <body>
-	hey
-	{{stuff['html']|safe}}
-	<iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F134324878&show_artwork=true&client_id=5c46cd90fc27e327c5d396d4c2cd2acc"></iframe>
-	hey
+	<center>
+	{{image|safe}}
+	<br>
+	Here's a sneak peek of the upcoming album:
+	<br>
+	<audio controls loop, autoplay>
+	<!-- This grabs the audio file for a song based on the query -->
+  	<source src="https://api.soundcloud.com/tracks/{{stuff['id']|safe}}/stream?client_id=5c46cd90fc27e327c5d396d4c2cd2acc" type="audio/mpeg">
+	Your browser does not support the audio element.
+	</audio>
+	</center>
 </body>
 </html>
